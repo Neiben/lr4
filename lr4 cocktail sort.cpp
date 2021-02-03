@@ -11,26 +11,23 @@ void swap(int&a, int& b ) {
             a = b;
            b = c;
         }  
-void cocktailsort(int arr[], const int n) {
-    
-    
-    int fst = 0;
-    int control = n;
-    int nxt = n -1 ;
+void cocktailsort(int arr[], const int n) {      
+    int start = 0;
+    int finish = n -1 ;
      
-    while (fst < nxt){
-        for (int i = fst; i < nxt; i++) {
+    while (start < finish){
+        for (int i = start; i < finish; i++) {
             if (arr[i] > arr[i + 1]) {
                 swap(arr[i], (arr)[i + 1]);              
             }
         }
-        fst++;
-        for (int i = nxt -1; i > fst; i--) {
+        start++;
+        for (int i = finish -1; i > start; i--) {
             if ((arr)[i] < (arr)[i - 1]) {
                 swap((arr)[i], (arr)[i - 1]);            
             }
         }
-        nxt--;
+        finish--;
     } 
 }
 
