@@ -24,36 +24,38 @@ void shell_sort(int arr[], const int n) {
             swap(arr[i], arr[i + (n/4)]);
         }
       }       
+    for (int i = 0; i < (n - (n / 6)); i++) {
+        if (arr[i] > arr[i + (n / 6)]) {
+            swap(arr[i], arr[i + (n / 6)]);
+        }
+    }
+
     for (int i = 0; i < n-(n/8); i++) {
         if (arr[i] > arr[i + (n / 8)]) {
             swap(arr[i], arr[i + (n / 8)]);
         }
     }       
+    for (int i = 0; i < (n - (n / 10)); i++) {
+        if (arr[i] > arr[i + (n / 10)]) {
+            swap(arr[i], arr[i + (n / 10)]);
+        }
+    }
+    for (int i = 0; i < (n - (n / 12)); i++) {
+        if (arr[i] > arr[i + (n / 12)]) {
+            swap(arr[i], arr[i + (n / 12)]);
+        }
+    }
+    for (int i = 0; i < (n - (n / 14)); i++) {
+        if (arr[i] > arr[i + (n / 14)]) {
+            swap(arr[i], arr[i + (n / 14)]);
+        }
+    }
     for (int i = 0; i < (n - (n/16)); i++) {
         if (arr[i] > arr[i + (n / 16)]) {
             swap(arr[i], arr[i + (n / 16)]);
         }
     }
-    for (int i = n-1; i > 0; i--) {
-        if (arr[i] < arr[i - 1]) {
-            swap(arr[i], arr[i - 1]);
-        }
-    }
-    for (int i = n - 1; i > 0; i--) {
-        if (arr[i] < arr[i - 1]) {
-            swap(arr[i], arr[i - 1]);
-        }
-    }
-    for (int i = n - 1; i > 0; i--) {
-        if (arr[i] < arr[i - 1]) {
-            swap(arr[i], arr[i - 1]);
-        }
-    }
-    for (int i = n - 1; i > 0; i--) {
-        if (arr[i] < arr[i - 1]) {
-            swap(arr[i], arr[i - 1]);
-        }
-    }
+   
 }
 
 int main()
