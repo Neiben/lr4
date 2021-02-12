@@ -10,13 +10,9 @@ void swap(int& a, int& b) {
     a = b;
     b = c;
 }
-
-
 void shell_sort(int arr[], const int n) {
     int def = 2;
     int abc = (n / def);
-
-
     do {
         for (int i = 0; i < (n - abc); i++)
         {
@@ -31,10 +27,6 @@ void shell_sort(int arr[], const int n) {
     } while (abc >= 1);
 }
    
-
-  
-
-
 int main()
 {
     const int n = 30;
